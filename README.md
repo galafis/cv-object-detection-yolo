@@ -19,6 +19,49 @@
 
 ## English
 
+## 📊 Architecture Diagram
+
+```mermaid
+graph LR
+    A[Input Image/Video] --> B[Preprocessing]
+    B --> C{Model Type}
+    C -->|YOLOv8| D[YOLO Detector]
+    C -->|Faster R-CNN| E[R-CNN Detector]
+    C -->|SSD| F[SSD Detector]
+    D --> G[Non-Max Suppression]
+    E --> G
+    F --> G
+    G --> H[Bounding Boxes]
+    H --> I[Class Labels]
+    I --> J[Confidence Scores]
+    J --> K[Visualization]
+    
+    style A fill:#e1f5ff
+    style K fill:#c8e6c9
+    style C fill:#fff9c4
+```
+
+## 🔄 Detection Pipeline
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Detector
+    participant Model
+    participant NMS
+    participant Visualizer
+    
+    User->>Detector: Input image
+    Detector->>Model: Preprocess & forward pass
+    Model-->>Detector: Raw detections
+    Detector->>NMS: Apply NMS
+    NMS-->>Detector: Filtered boxes
+    Detector->>Visualizer: Draw boxes & labels
+    Visualizer-->>User: Annotated image
+```
+
+
+
 ### 📋 Overview
 
 A comprehensive computer vision system for object detection implementing state-of-the-art models including YOLOv8, Faster R-CNN, and custom architectures. Features include real-time detection, transfer learning, model training, evaluation metrics (mAP, IoU), web interface, and REST API for production deployment.
