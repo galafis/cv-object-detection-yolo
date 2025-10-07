@@ -1,0 +1,28 @@
+# Core Dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Object Detection
+ultralytics>=8.0.0
+detectron2>=0.6
+
+# Utilities
+tqdm>=4.65.0
+loguru>=0.7.0
+pyyaml>=6.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# API
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+python-multipart>=0.0.6
+
+# Testing
+pytest>=7.3.0
+pytest-cov>=4.1.0
