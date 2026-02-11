@@ -7,7 +7,6 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.8+-5C3EE8.svg)
 ![YOLO](https://img.shields.io/badge/YOLO-v8-00FFFF.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
 
 **Production-ready object detection system using YOLO, Faster R-CNN, and custom models**
 
