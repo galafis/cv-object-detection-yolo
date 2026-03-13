@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](Dockerfile)
 
 Framework de deteccao de objetos inspirado na arquitetura YOLO. Implementa geracao de anchor boxes, Non-Max Suppression, calculo de IoU, utilitarios de bounding box, pipeline de deteccao e metricas de avaliacao (mAP).
 
